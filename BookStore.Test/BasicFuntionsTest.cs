@@ -13,11 +13,11 @@ namespace BookStore.Test
         [Fact]
         public void TestGetBookByTitle()
         {
-            // Act
+  
             Book? testBook = BasicFunctions.GetBookByTitle("");
 
-            // Assert
-            Assert.NotNull(testBook);
+   
+          
             Assert.Equal("", testBook.Title);
         }
 
