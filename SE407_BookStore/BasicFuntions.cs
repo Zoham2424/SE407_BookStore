@@ -25,20 +25,6 @@ namespace SE407_BookStore
                 return context.Books.ToList();
             }
         }
-        public static List<Book> GetBooksByAuthorLastName(string lastName)
-        {
-            using (var context = new )
-            {
-                return context.Authors
-                    .Where(a => a.LastName == lastName)
-                    .Join(
-                        context.Books,
-                        author => author.AuthorId,
-                        book => book.AuthorId,
-                        (author, book) => book
-                    )
-                    .ToList();
-            }
-        }
+
     }
 }
